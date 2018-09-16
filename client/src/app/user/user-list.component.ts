@@ -1,6 +1,7 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {UserService} from '../shared/service/user.service';
 import {MatPaginator, MatSort, MatTableDataSource} from '@angular/material';
+import {User} from '../shared/model/user.model';
 
 @Component({
   selector: 'app-user-list',
@@ -11,7 +12,7 @@ export class UserListComponent implements OnInit {
 
   displayedColumns = ['id', 'username', 'password', 'enabled', 'registerDate', 'name', 'surname', 'email', 'phone'];
 
-  dataSource: MatTableDataSource<UserD>;
+  dataSource: MatTableDataSource<User>;
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
@@ -39,17 +40,4 @@ export class UserListComponent implements OnInit {
   }
 
 
-}
-
-
-export interface UserD {
-  id: number;
-  username: string;
-  password: string;
-  enabled: boolean;
-  register_date: Date;
-  name: string;
-  surname: string;
-  email: string;
-  phone: string;
 }

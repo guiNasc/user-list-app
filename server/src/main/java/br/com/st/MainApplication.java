@@ -53,8 +53,8 @@ public class MainApplication {
             User u3 = new User();
             u3.setEmail("batman@email.com");
             u3.setName("Bruce");
-            u3.setEnabled(true);
-            u3.setPassword("passwd");
+            u3.setEnabled(false);
+            u3.setPassword("1234345");
             u3.setPhone("555-11-33");
             u3.setRegisterDate(new Date());
             u3.setSurname("Wayne");
@@ -77,8 +77,8 @@ public class MainApplication {
             User u5 = new User();
             u5.setEmail("flash@email.com");
             u5.setName("Flash");
-            u5.setEnabled(true);
-            u5.setPassword("passwd");
+            u5.setEnabled(false);
+            u5.setPassword("flashing");
             u5.setPhone("555-11-33");
             u5.setRegisterDate(new Date());
             u5.setSurname("Flash");
@@ -90,7 +90,7 @@ public class MainApplication {
             u6.setEmail("venom@email.com");
             u6.setName("Eddie");
             u6.setEnabled(true);
-            u6.setPassword("passwd");
+            u6.setPassword("whoisit?");
             u6.setPhone("555-11-33");
             u6.setRegisterDate(new Date());
             u6.setSurname("Brock");
