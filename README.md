@@ -19,6 +19,7 @@ cd user-list-app/server
 Para instalar e executar a aplicação de frontend execute os seguintes comandos:
   
 ```bash
+cd user-list-app/client
 npm install 
 npm start
 ```
